@@ -4,6 +4,15 @@
 
 ## What it does
 
+Program wil doing in two part
+logic : change complex names (Nom_complet and Ville) into simple name (name and city);
+
+app : use querySelector to get HTML beacons, then add result.
+        then add following results into beacon :
+app : will with .length calculate and display how many musuems
+app : create a liste with a loop, create a list and display it in HTML
+    
+
 <!-- One or two sentences: what a visitor can do with this page. -->
 
 ## Data source and licence
