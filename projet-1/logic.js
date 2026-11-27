@@ -4,9 +4,9 @@
 
 // US-1 — museumLabel(museum) renvoie « nom - ville » : 'musée de Dinan - Dinan'.
 // Le tiret est le signe moins du clavier (-), entouré de deux espaces.
-export function museumLabel(museum) {
-  // TODO: replace the line below with your code.
-  return '';
+export function museumLabel({Nom_officiel: name, Ville : city}) {
+  // Je renvoie le nom, tiret, la ville
+  return `${name} - ${city}`;
 }
 
 // US-2 — searchMuseums(museums, query) renvoie un NOUVEAU tableau : les musées dont le nom

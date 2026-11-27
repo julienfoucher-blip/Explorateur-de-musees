@@ -10,3 +10,17 @@ import { museumLabel } from './logic.js';
 // TODO 3 : pour chaque musée (for...of), créez un <li>, mettez-y museumLabel(museum)
 //          avec textContent, puis ajoutez-le à la liste (append).
 console.log('À faire', MUSEUMS.length, museumLabel);
+const summary = document.querySelector('#resume');
+const list = document.querySelector('#liste');
+
+summary.textContent = `${MUSEUMS.length} musées`
+
+//Une boucle qui lis tout les objets
+for(const museums of MUSEUMS){
+    //Création d'une liste
+    const item = document.createElement('li');
+    //Son texte est la logique : museumLabel
+    item.textContent = museumLabel(museums);
+    //Ajouter à la liste
+    list.append(item);
+}
